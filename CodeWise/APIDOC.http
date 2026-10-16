@@ -1,0 +1,39 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{   "title":"prime number",
+    "language":"",
+    "difficulty_level":"easy",
+    "note":"This question is about calculating the factorial of a given number using loop",
+    "topic":"loops",
+    "sample_input":"",
+    "sample_output":"",
+    "is_active":true
+}
+
+###
+GET http://127.0.0.1:8000/questions/3/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/questions/3/
+Content-Type: application/json
+
+{   "title":"Calculator",
+    "language":"python",
+    "difficulty_level":"easy",
+    "note":"Calculator",
+    "topic":"python advance",
+    "sample_input":"demo",
+    "sample_output":"demo",
+    "is_active":true
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/2/
+Content-Type: application/json
